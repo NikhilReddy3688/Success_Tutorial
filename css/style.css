@@ -1,0 +1,90 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #87CEEB;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+nav {
+  background-color: #0D47A1;
+  padding: 15px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  background-color: #1976D2;
+}
+
+/* Hero section */
+.hero {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #0D47A1;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #2196F3;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1976D2;
+}
+
+/* Footer */
+footer {
+  background-color: #0D47A1;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
