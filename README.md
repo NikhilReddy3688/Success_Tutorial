@@ -14,21 +14,20 @@ It's fully built with **HTML, CSS, and JavaScript** and is hosted using **GitHub
 
 ## 📁 Folder Structure
 
-""" Success_Tutorial/
+```
+Success_Tutorial/
 ├── Html/
-│ ├── index.html # Homepage
-│ ├── login.html # Login Page
-│ ├── register.html # Registration Page
-│ ├── curriculum.html # Curriculum Page
-│ ├── contact.html # Contact Page
-│ └── logout.html # Logout Page
+│   ├── index.html        # Homepage
+│   ├── login.html        # Login Page
+│   ├── register.html     # Registration Page
+│   ├── curriculum.html   # Curriculum Page
+│   ├── contact.html      # Contact Page
+│   └── logout.html       # Logout Page
 ├── Css/
-│ └── styles.css # (Optional) CSS Styles
+│   └── styles.css        # (Optional) CSS Styles
 ├── Js/
-│ └── script.js # (Optional) JavaScript File """
-
-
-
+│   └── script.js         # (Optional) JavaScript File
+```
 ---
 
 ## 🚀 Features
