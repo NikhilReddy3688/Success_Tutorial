@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Success Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> Success Tutorials, Hyderabad, Telangana, India</p>
+        <p><strong>Phone:</strong> +91 73867 88319</p>
+        <p><strong>Email:</strong> reddynikhil3688@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Success Tutorials. All rights reserved.</p>
+  </footer>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>

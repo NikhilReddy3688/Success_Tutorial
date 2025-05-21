@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Success Tutorials</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dashboard-section">
+      <h2>Registered Students</h2>
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Parent Name</th>
+            <th>Child Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Class</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+      window.location.href = 'login.html';
+    }
+
+    const registrations = JSON.parse(localStorage.getItem('registrations')) || [];
+    const tbody = document.querySelector('#studentTable tbody');
+
+    registrations.forEach(student => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${student.parentName}</td>
+        <td>${student.childName}</td>
+        <td>${student.phone}</td>
+        <td>${student.email}</td>
+        <td>${student.studentClass}</td>
+      `;
+      tbody.appendChild(row);
+    });
+
+    function logout() {
+      localStorage.removeItem('isLoggedIn');
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
