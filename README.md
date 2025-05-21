@@ -14,7 +14,7 @@ It's fully built with **HTML, CSS, and JavaScript** and is hosted using **GitHub
 
 ## 📁 Folder Structure
 
-Success_Tutorial/
+""" Success_Tutorial/
 ├── Html/
 │ ├── index.html # Homepage
 │ ├── login.html # Login Page
@@ -25,7 +25,7 @@ Success_Tutorial/
 ├── Css/
 │ └── styles.css # (Optional) CSS Styles
 ├── Js/
-│ └── script.js # (Optional) JavaScript File
+│ └── script.js # (Optional) JavaScript File """
 
 
 
